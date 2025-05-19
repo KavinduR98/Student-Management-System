@@ -1,10 +1,14 @@
 package com.ushan.studentManagementSystem.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "student")
 public class Student {
 
@@ -19,5 +23,6 @@ public class Student {
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
 
 }

@@ -2,10 +2,14 @@ package com.ushan.studentManagementSystem.model;
 
 import com.ushan.studentManagementSystem.util.UserRole;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "user")
 public class User {
 
